@@ -7,7 +7,7 @@ def flatten_list(in_list):
     for x in in_list:
         inner_list = []
         if isinstance(x, list):
-            inner_list.extend(flatten(x))
+            inner_list.extend(flatten_list(x))
         else:
             inner_list.append(x)
         outer_list.extend(inner_list)
