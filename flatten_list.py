@@ -1,4 +1,4 @@
-# Recursive function that flattens in_list
+# Recursive function that flattens arbitrarily nested in_list
 def flatten_list(in_list):
     if isinstance(in_list, list) is False:
         raise ValueError('Input must be list')
@@ -11,5 +11,5 @@ def flatten_list(in_list):
         else:
             inner_list.append(x)
         outer_list.extend(inner_list)
-    
+
     return outer_list
