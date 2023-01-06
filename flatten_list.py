@@ -1,4 +1,4 @@
-# Recursive function that flattens arbitrarily nested in_list
+# Recursive function that flattens arbitrarily nested input_list
 def flatten_list(input_list):
     if isinstance(input_list, list) is False:
         raise ValueError('Input must be list')
